@@ -3,9 +3,10 @@ from typing import Annotated
 import requests
 from dotenv import load_dotenv
 import os
+import streamlit as st
 
 load_dotenv()
-exchangerate_api_key = os.getenv("EXCHANGERATE_API_KEY")
+exchangerate_api_key = os.getenv("EXCHANGERATE_API_KEY") or st.secrets.get("EXCHANGERATE_API_KEY")
 
 @tool
 def get_conversion_factor(base_currency: str, target_currency: str) -> float:
