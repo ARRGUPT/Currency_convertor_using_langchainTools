@@ -1,6 +1,16 @@
-streamlit
-langchain
+# LangChain
 langchain-core
-langchain_groq
-requests
+langchain
+# LLM 
+langchain-groq
+# load_dotenv
 python-dotenv
+# For streamlit
+streamlit
+# others
+requests
+# --- Utilities and Frameworks ---
+# For tool, Annotated, typing, and the core Python environment
+# Note: 'typing' is built-in; 'Annotated' requires Python >= 3.9
+# No specific package install is needed for these unless using Python < 3.9
+# (Assuming modern Python environment)
